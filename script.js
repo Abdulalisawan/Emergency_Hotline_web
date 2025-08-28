@@ -109,11 +109,11 @@ cardnumber.forEach(copiednumber =>{
         let copytext= copiednumber.innerText;
         navigator.clipboard.writeText(copytext)
         .then(() => {
-        // Success feedback
+        
         alert('Text copied to clipboard!');
       })
       .catch(err => {
-        // Error ha
+        
         console.error('Failed to copy text: ', err);
       });
 
